@@ -2,7 +2,7 @@
 
 
 
-####HLHIG takes: 
+####Time2leave gem takes: 
 	Flight number
 	Hang_time in mins (time you think you need at the airport i.e. 120 for international)
 	Start location
