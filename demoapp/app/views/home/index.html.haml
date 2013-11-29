@@ -1,0 +1,22 @@
+%center
+  %h1 Flight demo app
+
+  %h3 Please Enter Flight Details eg (flight number = VRD1178, airport hangtime = 120 ,leaving location= orange county )
+
+  = form_tag "/flight", method: "get" do
+    = label_tag :flight_number
+    = text_field_tag :flight_number
+    = label_tag :airport_hang_time
+    = text_field_tag :hang_time
+    = label_tag :location
+    = text_field_tag :location
+
+    = submit_tag("search for details")
+
+  - if @flight
+    - @flight.each_pair do |key, value|
+      %p 
+        = key 
+      %p 
+        = value
+
